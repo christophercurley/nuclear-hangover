@@ -1,5 +1,18 @@
-img {
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: 150px;
+  margin-top: -4.8em;
 }
