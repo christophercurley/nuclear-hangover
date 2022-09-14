@@ -1,6 +1,37 @@
+:root {
+  --gradient1: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
+  --gradient2: linear-gradient(
+    45deg,
+    #86ff00,
+    #0379fb,
+    #48ffb1,
+    #ff3b3b,
+    #ff3fbc
+  );
+}
+
 .bgimg {
-  background-image: url("../src/assets/bg.jpg");
-  background-size: "cover";
+  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-image: var(--gradient1);
+  background-size: 400%;
   height: 100vh;
+  animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
