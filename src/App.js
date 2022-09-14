@@ -10,8 +10,6 @@ import Misc from "./pages/Misc";
 import Store from "./pages/Store";
 
 function App() {
-  console.log(Movies);
-
   return (
     <div className="App">
       <Hero />
@@ -21,6 +19,7 @@ function App() {
         <Route path="/animes" element={<Animes />} />
         <Route path="/misc" element={<Misc />} />
         <Route path="/store" element={<Store />} />
+        <Route path="/" element={null} />
       </Routes>
     </div>
   );

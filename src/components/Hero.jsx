@@ -1,19 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Hero.css";
 import hero from "../assets/hero.jpg";
-import logo from "../assets/logo.png";
 
 function Hero() {
-  // const [sWidth, setSWidth] = useState(null)
-
-  // useEffect(() => {
-  //   let
-  // }, [])
-
   return (
     <>
-      <img className="hero" src={hero} />
-      {/* <img className="logo" src={logo} /> */}
+      <img
+        className="hero"
+        src={hero}
+        alt="bleeding edge science derived soft potions for your calcified pineal gland and babes that you have probably heard of before"
+      />
     </>
   );
 }

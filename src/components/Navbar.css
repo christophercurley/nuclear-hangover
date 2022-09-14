@@ -1,40 +1,67 @@
-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 1.75em 3.5em;
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  justify-content: space-around;
-  /* border: 1px red solid; */
-  height: 100px;
-  width: 61.125vw;
-}
+@media screen and (min-width: 1200px) {
+  button {
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.45em;
+    cursor: pointer;
+    padding: 0.01rem 1em;
+    font-size: 1.5em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
 
-.link {
-  width: 15%;
-  /* border: 1px red solid; */
-}
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 1px red solid; */
+    height: 100px;
+    width: 65vw;
+    max-width: 1750px;
+    padding-top: 0;
+    padding-bottom: 1.5em;
+  }
 
-.logo {
-  flex-shrink: 0;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  margin: 0;
-  background-image: url("../assets/logo.png");
-  background-position: center;
-  background-size: 140%;
-  background-repeat: no-repeat;
-  background-clip: initial;
-}
+  .link {
+    width: 20%;
+    /* border: 1px red solid; */
+  }
 
-.img {
-  max-width: 100px;
-  height: auto;
-  display: block;
+  .movies button {
+  }
+  .animes button {
+    margin-right: 5em;
+  }
+
+  .misc button {
+    margin-left: 5em;
+  }
+
+  .store button {
+  }
+
+  .logo {
+    flex-shrink: 0;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    background-image: url("../assets/logo.png");
+    background-position: center;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-clip: initial;
+    position: absolute;
+  }
+
+  .img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+  }
 }
