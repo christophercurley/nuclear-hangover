@@ -1,0 +1,40 @@
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1.75em 3.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: space-around;
+  /* border: 1px red solid; */
+  height: 100px;
+  width: 61.125vw;
+}
+
+.link {
+  width: 15%;
+  /* border: 1px red solid; */
+}
+
+.logo {
+  flex-shrink: 0;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  background-image: url("../assets/logo.png");
+  background-position: center;
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-clip: initial;
+}
+
+.img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+}

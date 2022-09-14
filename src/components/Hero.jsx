@@ -13,7 +13,7 @@ function Hero() {
   return (
     <>
       <img className="hero" src={hero} />
-      <img className="logo" src={logo} />
+      {/* <img className="logo" src={logo} /> */}
     </>
   );
 }
