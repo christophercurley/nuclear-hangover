@@ -21,12 +21,7 @@ function Navbar() {
             </button>
           </Link>
         </div>
-        <div className="logo link">
-          {/* <img
-            src={logo}
-            alt="bleeding edge science derived soft potions for your calcified pineal gland and babes that you have probably heard of before"
-          /> */}
-        </div>
+        <div className="logo link"></div>
         <div className="misc link">
           <Link to="/misc">
             <button>

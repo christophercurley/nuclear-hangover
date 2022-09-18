@@ -9,22 +9,42 @@
     #f9f871
   );
   --gradient2: linear-gradient(
-    45deg,
+    /* so what you need to do to create a pretty clean gradient animation is too pick your major colors and then do five "in-between" colors to transition through. I am semi-sure that certain combinations will require more steps and others less (ie : blue to green requires fewer steps than blue to red)  */
+      45deg,
     #86ff00,
-    #0379fb,
+    #7aff23,
+    #6dff47,
+    #61ff6a,
+    #54ff8e,
     #48ffb1,
-    #ff3b3b,
-    #ff3fbc
+    #03f3fb,
+    #03dbfb,
+    #03c2fb,
+    #03aafb,
+    #0391fb,
+    #0379fb,
+    #2d7cdc,
+    #567fbd,
+    #80839e,
+    #a9867e,
+    #d3895f,
+    #fc8c40,
+    #fd754b,
+    #fd5d57,
+    #fe4662,
+    #fe2f6d,
+    #ff1779,
+    #ff0084
   );
 }
 
 .bgimg {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-image: var(--gradient1);
+  background-image: var(--gradient2);
   background-size: 400%;
   height: 100vh;
-  animation: bg-animation 5s infinite alternate;
+  animation: bg-animation 20s infinite alternate;
 }
 
 @keyframes bg-animation {
